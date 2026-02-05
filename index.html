@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For You 💖</title>
+  
+  <!-- Sweet Valentine Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Sacramento&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Floating hearts & flowers -->
+<div class="floating-bg"></div>
+
+<!-- Slider Cards -->
+<div class="slider">
+
+  <!-- Slide 1 -->
+  <section class="slide active">
+    <h1>Hello Baby!💖</h1>
+    <p>I made something just for you.</p>
+    <button onclick="next()">Swipe →</button>
+  </section>
+
+  <!-- Slide 2: Question with Yes/No buttons -->
+  <section class="slide">
+    <h2>A small question 🌷</h2>
+    <p>Will you be my Valentine?</p>
+
+    <div class="btns">
+      <button id="yesBtn" class="yes" onclick="next()">Yes 💖</button>
+      <button id="noBtn" class="no">No 😅</button>
+    </div>
+  </section>
+
+  <!-- Slide 3: Gift -->
+  <section class="slide">
+    <h2>This is for you 🎁</h2>
+    <img src="dudu-flower.gif" id="gift" onclick="openGift()">
+    <p class="hint">tap the gift</p>
+  </section>
+
+  <!-- Slide 4: Custom message -->
+  <section class="slide">
+    <h2>🌸 <span id="name">Baby!</span> 💌</h2>
+    <p class="message">
+      I just want you to know that you mean a lot to me.  
+      Thank you for being you.  
+      I hope this made you smile 🌷
+    </p>
+    <p class="footer">— from me 💖</p>
+  </section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
